@@ -29,26 +29,16 @@ Sections:.data, Virtual Address:0xd000\
 Sections:.rsrc, Virtual Address:0x15000
 
 -------------------------------------------
-                IAT
+List of IAT
 -------------------------------------------
-MSVCRT.dll
-	_iob
-	_except_handler3
-	__set_app_type
-	__p__fmode
-	__p__commode
+MSVCRT.dll\
+	_iob\
+	_except_handler3\
     .....................
-	__mb_cur_max
-	_pctype
-	strchr
-	fprintf
-	_controlfp
-	_strdup
-	_strnicmp
-KERNEL32.dll
-	PeekNamedPipe
-	ReadFile
-	WriteFile
-	LoadLibraryA
-	GetProcAddress
+	_strdup\
+	_strnicmp\
+KERNEL32.dll\
+	PeekNamedPipe\
+	ReadFile\
+	WriteFile\
        ....................
