@@ -20,7 +20,7 @@ Saved as: /root/testadd10.exe
 root@kali64:~# 
 
 # Getting Started & Examples
-The script will show the sections and IAT of the file as shown below
+The script will show the sections and IAT of the file as shown below  
 
 root@kali64:~# python pe_test.py testadd10.exe
 testadd10.exe
