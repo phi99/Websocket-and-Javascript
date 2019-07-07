@@ -1,18 +1,19 @@
-import pefile
-import sys
-
-input_file=sys.argv[1]#input_file = args.INPUT_FILE 
-print(input_file) 
-type(input_file)
-pe=pefile.PE(input_file)
-
-#Enumerate the file's PE Sections
-for section in pe.sections:
-  print (section.Name, hex(section.VirtualAddress),
-    hex(section.Misc_VirtualSize), section.SizeOfRawData )
-
-#Enumerate the file's Import Address Table
-for entry in pe.DIRECTORY_ENTRY_IMPORT:
-    print entry.dll
-    for function in entry.imports:
+import pefile 
+import argparse 
+import sys 
+ 
+input_file=sys.argv[1]
+pe=pefile.PE(input_file) 
+ 
+for section in pe.sections: 
+    print("Sections:{}, Virtual Address:{}\n".format(section.Name,hex(section.VirtualAddress)))   
+ 
+print("-------------------------------------------") 
+print("               IAT LIST") 
+print("-------------------------------------------") 
+ 
+for entry in pe.DIRECTORY_ENTRY_IMPORT: 
+    print entry.dll 
+    for function in entry.imports: 
         print '\t',function.name
+                                                               45        1,1           All
