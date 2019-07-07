@@ -23,10 +23,9 @@ root@kali64:~#
 The script will show the sections and IAT of the file as shown below    
 
 root@kali64:~# python pe_test.py testadd10.exe \
-testadd10.exe
-('.text\x00\x00\x00', '0x1000', '0xa966', 45056)
-('.rdata\x00\x00', '0xc000', '0xfe6', 4096)
-('.data\x00\x00\x00', '0xd000', '0x705c', 16384)
+('.text\x00\x00\x00', '0x1000', '0xa966', 45056)\
+('.rdata\x00\x00', '0xc000', '0xfe6', 4096)\
+('.data\x00\x00\x00', '0xd000', '0x705c', 16384)\
 ('.rsrc\x00\x00\x00', '0x15000', '0x7c8', 4096) \
 
 MSVCRT.dll
