@@ -19,7 +19,7 @@ Final size of exe file: 73802 bytes
 Saved as: /root/testadd10.exe
 root@kali64:~# 
 
-#Getting Started and Example
+# Getting Started & Examples
 The script will show the sections and IAT of the file as shown below
 
 root@kali64:~# python pe_test.py testadd10.exe
