@@ -9,7 +9,7 @@ for section in pe.sections:
     print("Sections:{}, Virtual Address:{}\n".format(section.Name,hex(section.VirtualAddress)))   
  
 print("-------------------------------------------") 
-print("               IAT LIST") 
+print("               List of IAT") 
 print("-------------------------------------------") 
  
 #List Import Address Table of the file
