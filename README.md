@@ -26,7 +26,7 @@ root@kali64:~# python pe_test.py testadd10.exe \
 ('.text\x00\x00\x00', '0x1000', '0xa966', 45056)\
 ('.rdata\x00\x00', '0xc000', '0xfe6', 4096)\
 ('.data\x00\x00\x00', '0xd000', '0x705c', 16384)\
-('.rsrc\x00\x00\x00', '0x15000', '0x7c8', 4096) \
+('.rsrc\x00\x00\x00', '0x15000', '0x7c8', 4096) 
 
 MSVCRT.dll
 	_iob
@@ -37,19 +37,7 @@ MSVCRT.dll
 	_adjust_fdiv
 	__setusermatherr
 	_initterm
-	__getmainargs
-	__p___initenv
-	_XcptFilter
-	_exit
-	_onexit
-	__dllonexit
-	strrchr
-	wcsncmp
-	_close
-	wcslen
-	wcscpy
-	strerror
-	modf
+     ..........
 	strspn
 	realloc
 	__p__environ
