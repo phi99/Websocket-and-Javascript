@@ -20,46 +20,24 @@ Saved as: /root/testadd10.exe
 root@kali64:~# 
 
 # Getting Started & Examples
-The script will show the sections and IAT of the file as shown below    
+The script will show the sections & its virtual address and IAT of the file as shown below    
 
-root@kali64:~# python pe_test.py testadd10.exe \
-('.text\x00\x00\x00', '0x1000', '0xa966', 45056)\
-('.rdata\x00\x00', '0xc000', '0xfe6', 4096)\
-('.data\x00\x00\x00', '0xd000', '0x705c', 16384)\
-('.rsrc\x00\x00\x00', '0x15000', '0x7c8', 4096) 
+root@kali64:~# python pe_test.py testadd10.exe
+Sections:.text, Virtual Address:0x1000\
+Sections:.rdata, Virtual Address:0xc000\
+Sections:.data, Virtual Address:0xd000\
+Sections:.rsrc, Virtual Address:0x15000
 
+-------------------------------------------
+                IAT
+-------------------------------------------
 MSVCRT.dll
 	_iob
 	_except_handler3
 	__set_app_type
 	__p__fmode
 	__p__commode
-	_adjust_fdiv
-	__setusermatherr
-	_initterm
-     ..........
-	strspn
-	realloc
-	__p__environ
-	__p__wenviron
-	_errno
-	free
-	strncmp
-	strstr
-	strncpy
-	_ftol
-	qsort
-	fopen
-	perror
-	fclose
-	fflush
-	calloc
-	malloc
-	signal
-	printf
-	_isctype
-	atoi
-	exit
+    .....................
 	__mb_cur_max
 	_pctype
 	strchr
@@ -73,6 +51,4 @@ KERNEL32.dll
 	WriteFile
 	LoadLibraryA
 	GetProcAddress
-	GetVersionExA
-	GetExitCodeProcess
-
+       ....................
