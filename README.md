@@ -22,7 +22,7 @@ root@kali64:~#
 # Getting Started & Examples
 The script will show the sections and IAT of the file as shown below    
 
-root@kali64:~# python pe_test.py testadd10.exe
+root@kali64:~# python pe_test.py testadd10.exe \
 testadd10.exe
 ('.text\x00\x00\x00', '0x1000', '0xa966', 45056)
 ('.rdata\x00\x00', '0xc000', '0xfe6', 4096)
