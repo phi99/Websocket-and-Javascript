@@ -30,7 +30,7 @@ Sections:.rsrc, Virtual Address:0x15000
 
 -------------------------------------------
 List of IAT
--------------------------------------------
+
 MSVCRT.dll\
 	_iob\
 	_except_handler3\
