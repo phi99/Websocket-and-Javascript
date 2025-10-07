@@ -1,6 +1,5 @@
 ***In Progress**
 
-*self study exercise
 
 	 	 	    --------------------------------------------------------------
 	     	    	     ** Creating WebSocket Server and Client using Javascript **
